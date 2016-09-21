@@ -5,10 +5,13 @@ $(document).ready(function() {
   }
   $("div div:nth-child(16n)").after("<br>");
 
+  $(document).on('mouseenter', '.gridSquare', function() {
+    $(this).css('background-color', 'blue');
+  });
 
-    // $('.gridSquare').mouseenter(function() {
-    //     $(this).css('background-color', 'blue');
-
+  $(document).on('click', '#new-grid', function() {
+    $('.gridSquare').remove();
+  });
 
 });
 

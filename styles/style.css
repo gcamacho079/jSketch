@@ -23,14 +23,13 @@ header {
   width: 960px;
 
 }
-
-footer {
-  text-align: center;
-}
+/**************************
+GRID AREA
+***************************/
 
 .gridArea {
   width: 690px
-  height: 690px
+  height: 690px;
 }
 .gridSquare {
   width: 41.125px;
@@ -38,9 +37,16 @@ footer {
   margin: 1px;
   padding: 0;
   border: 0;
-  background-color: #000;
   display: inline-block;
-  clear:both;
+}
+
+
+/**************************
+GRID AREA
+***************************/
+
+footer {
+  text-align: center;
 }
 
 /* MATH FOR SQUARES
@@ -62,4 +68,8 @@ h1 {
 
 p{
   color: black;
+}
+
+.gridSquare {
+  background-color: #000;
 }
