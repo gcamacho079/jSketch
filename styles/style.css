@@ -1,0 +1,65 @@
+/**************************
+GENERAL
+***************************/
+
+h1 {
+  text-align: center;
+  font-family: 'Finger Paint', sans-serif;;
+  font-size: 3em;
+  font-weight: normal;
+
+}
+
+header {
+  width: 100%;
+  padding: 5px 0;
+}
+
+.wrapper {
+  margin: 10px auto;
+  padding: 0;
+  text-align: center;
+  height: 960px;
+  width: 960px;
+
+}
+
+footer {
+  text-align: center;
+}
+
+.gridArea {
+  width: 690px
+  height: 690px
+}
+.gridSquare {
+  width: 41.125px;
+  height: 41.125px;
+  margin: 1px;
+  padding: 0;
+  border: 0;
+  background-color: #000;
+  display: inline-block;
+  clear:both;
+}
+
+/* MATH FOR SQUARES
+16 squares w/ 1 px margin (so 2 px per) means 32 total px taken up by margin
+928/16 =
+*/
+
+/**************************
+COLORS
+***************************/
+
+header {
+  background: red;
+}
+
+h1 {
+  color: white;
+}
+
+p{
+  color: black;
+}
