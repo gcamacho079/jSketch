@@ -34,7 +34,7 @@ GRID AREA
 .gridSquare {
   width: 41.125px;
   height: 41.125px;
-  margin: 1px;
+  margin: 0;
   padding: 0;
   border: 0;
   display: inline-block;
@@ -42,17 +42,12 @@ GRID AREA
 
 
 /**************************
-GRID AREA
+FOOTER
 ***************************/
 
 footer {
   text-align: center;
 }
-
-/* MATH FOR SQUARES
-16 squares w/ 1 px margin (so 2 px per) means 32 total px taken up by margin
-928/16 =
-*/
 
 /**************************
 COLORS
