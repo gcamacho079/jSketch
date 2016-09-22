@@ -31,17 +31,8 @@ var etchASketch = {
 
     /**** Calculates new length and width ****/
 
-    var pixelsPerBox = (690/squaresPerSide);
-    pixelsPerBox = pixelsPerBox;
-
-    /**** Assigns new CSS properties (NOT WORKING)****/
-
-    console.log(pixelsPerBox);
-    $allBoxes = $(".gridSquare");
-    $allBoxes.height(pixelsPerBox);
-    $allBoxes.width(pixelsPerBox);
-    console.log($allBoxes.width());
-
+    var pixelsPerBox = (480/squaresPerSide);
+    pixelsPerBox = pixelsPerBox + "px";
 
     /**** Builds new grid ****/
 
@@ -49,8 +40,16 @@ var etchASketch = {
     for (i = 0; i < (squaresPerSide * squaresPerSide); i++) {
       $(".gridArea").append(squareBuilder);
     }
+
+    /**** Assigns new length/width properties to squares ****/
+
+    $(".gridSquare").width(pixelsPerBox);
+    $(".gridSquare").height(pixelsPerBox);
     var $linebreakConstructor = $('div div:nth-child(' + squaresPerSide + 'n)');
     $linebreakConstructor.after("<br>");
+
+
+    console.log(pixelsPerBox); /* TEST */
 
     $(".gridSquare").mouseenter(etchASketch.penTool);
 

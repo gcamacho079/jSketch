@@ -19,21 +19,27 @@ header {
   margin: 10px auto;
   padding: 0;
   text-align: center;
-  height: 960px;
-  width: 960px;
 
+
+}
+
+#new-grid {
+  margin-bottom: 20px;
 }
 /**************************
 GRID AREA
 ***************************/
 
 .gridArea {
-  width: 690px
-  height: 690px;
+
+  padding: 1px;
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
 }
 .gridSquare {
-  width: 41.125px;
-  height: 41.125px;
+  width: 30px;
+  height: 30px;
   margin: 0;
   padding: 0;
   border: 0;
@@ -46,6 +52,7 @@ FOOTER
 ***************************/
 
 footer {
+  margin-top: 20px;
   text-align: center;
 }
 
