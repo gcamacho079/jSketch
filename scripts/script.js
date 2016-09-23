@@ -26,13 +26,16 @@ var etchASketch = {
   NEW GRID FUNCTION
   ***************************/
   drawNewGrid: function() {
-    var squaresPerSide = prompt("How many squares wide should this grid be? Enter a number between 1-690:");
+    var squaresPerSide = prompt("How many squares wide should this grid be? Enter a number between 1-100:");
+    while (squaresPerSide < 1 || squaresPerSide > 100 ) {
+      squaresPerSide = prompt("Please enter a number between 1-100:");
+    }
     $('.gridArea').empty();
 
     /**** Calculates new length and width ****/
 
-    var pixelsPerBox = (480/squaresPerSide);
-    pixelsPerBox = pixelsPerBox + "px";
+    var percentPerBox = (100/squaresPerSide);
+    percentPerBox = percentPerBox + "%";
 
     /**** Builds new grid ****/
 
@@ -43,13 +46,13 @@ var etchASketch = {
 
     /**** Assigns new length/width properties to squares ****/
 
-    $(".gridSquare").width(pixelsPerBox);
-    $(".gridSquare").height(pixelsPerBox);
+    $(".gridSquare").width(percentPerBox);
+    $(".gridSquare").height(percentPerBox);
+
+    /**** Inserts linebreaks ****/
+
     var $linebreakConstructor = $('div div:nth-child(' + squaresPerSide + 'n)');
     $linebreakConstructor.after("<br>");
-
-
-    console.log(pixelsPerBox); /* TEST */
 
     $(".gridSquare").mouseenter(etchASketch.penTool);
 
